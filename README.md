@@ -1,1 +1,1 @@
-https://knmskln.github.io/coffee-house/home.html
+https://knmskln.github.io/coffee-house/
