@@ -96,13 +96,23 @@ main {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
     color: #403F3D;
     background-color: #E1D4C9;
     border-radius: 100px;
     width: 200px;
     height: 64px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.coffee-cup__icon {
+    max-width: 0;
+    opacity: 0;
+    transition: max-width 0.4s ease, opacity 0.2s ease;
 }
 
 .favorite-container {
@@ -185,6 +195,13 @@ main {
     }
 }
 
+@media (max-width: 768px) {
+    .coffee-cup__icon {
+        max-width: 20px;
+        opacity: 1;
+    }
+}
+
 @media (max-width: 760px) {
     #hero {
         height: 552px;
@@ -234,5 +251,14 @@ main {
     .slider__item img {
         max-width: 348px;
         max-height: 348px;
+    }
+}
+
+@media (hover: hover) {
+    .hero-content button:hover {
+        .coffee-cup__icon {
+            max-width: 20px;
+            opacity: 1;
+        }
     }
 }
