@@ -18,7 +18,7 @@ html {
 }
 
 header {
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 main {
@@ -54,6 +54,26 @@ h2 {
 h2 span {
     font-style: italic;
     color: #B0907A;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    align-items: center;
+    padding: 0;
+}
+header a {
+    text-decoration: none;
+    color: #403F3D;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    transition: color 0.5s ease;
 }
 
 #hero {
@@ -157,6 +177,7 @@ h2 span {
     width: 60px;
     height: 60px;
     transition: background-color 0.5s ease;
+    cursor: pointer;
 }
 
 .slider__item {
