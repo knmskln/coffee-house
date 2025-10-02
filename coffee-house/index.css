@@ -190,9 +190,44 @@ h2 span {
     justify-content: center;
 }
 
+#mobile-app h2 {
+    text-align: left;
+}
+
+#mobile-app img {
+    width: 630px;
+    height: 630px;
+}
+.mobile-app__container {
+    display: flex;
+    gap: 100px;
+    padding: 0 40px;
+    align-items: center;
+}
+.mobile-app__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mobile-app__info p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+    margin: 0;
+}
+.app-store__button {
+    display: flex;
+    gap: 20px;
+}
+
 @media (max-width: 1000px) {
     .hero-content {
         margin: 100px 0 100px 100px;
+    }
+    .mobile-app__container {
+        flex-direction: column;
     }
 }
 
@@ -252,6 +287,19 @@ h2 span {
     .slider__item img {
         max-width: 348px;
         max-height: 348px;
+    }
+
+    #mobile-app img {
+        width: 348px;
+        height: 348px;
+    }
+
+    .mobile-app__container {
+        padding: 0 16px;
+        gap: 40px;
+    }
+    .app-store__button {
+        flex-direction: column;
     }
 }
 
