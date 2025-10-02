@@ -144,6 +144,21 @@ h2 span {
     align-items: center;
 }
 
+.slider-container button img {
+    padding: 18px;
+}
+
+.slider-container button {
+    border-radius: 50%;
+    border: 1px solid #665F55;
+    background-color: #E1D4C9;
+    padding: 0;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    transition: background-color 0.5s ease;
+}
+
 .slider__item {
     display: flex;
     flex-direction: column;
@@ -298,6 +313,7 @@ h2 span {
     display: flex;
     gap: 12px;
 }
+
 #contacts h2 {
     text-align: unset;
     color: #E1D4C9;
@@ -308,6 +324,7 @@ h2 span {
     flex-direction: column;
     gap: 16px;
 }
+
 #contacts .contacts__info h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -409,7 +426,7 @@ h2 span {
         align-items: center;
     }
 
-    .slider-container svg {
+    .slider-container button {
         display: none;
     }
 
@@ -460,5 +477,13 @@ h2 span {
             max-width: 20px;
             opacity: 1;
         }
+    }
+
+    #favorite .slider-container button:hover svg path {
+        stroke: #E1D4C9;
+    }
+
+    #favorite .slider-container button:hover {
+        background-color: #665F55;
     }
 }
