@@ -95,6 +95,69 @@ main {
     border: none;
 }
 
+.favourite-coffee {
+    display: flex;
+    justify-content: center;
+}
+#favorite h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 125%;
+    color: #403F3D;
+    margin: 0;
+}
+
+#favorite h2 span{
+    font-style: italic;
+    color: #B0907A;
+}
+
+.slider-container{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 480px;
+    gap: 20px;
+}
+
+.slider__item img {
+    width: 480px;
+    height: 480px;
+}
+
+.slider__item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.slider__item-info h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #403F3D;
+    margin: 0;
+}
+
+.slider__item-info p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+    margin: 0;
+    text-align: center;
+}
+
 @media (max-width: 1000px) {
     .hero-content {
         margin: 100px 0 100px 100px;
