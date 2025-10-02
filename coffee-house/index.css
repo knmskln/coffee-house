@@ -278,6 +278,60 @@ h2 span {
     gap: 20px;
 }
 
+#contacts .contacts__container {
+    background-color: #665F55;
+    display: flex;
+    gap: 100px;
+    padding: 100px;
+    align-items: center;
+    border-radius: 40px;
+}
+
+#contacts .contacts__container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 530px;
+}
+
+#contacts .contacts__buttons {
+    display: flex;
+    gap: 12px;
+}
+#contacts h2 {
+    text-align: unset;
+    color: #E1D4C9;
+}
+
+#contacts .contacts__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#contacts .contacts__info h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #E1D4C9;
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+#contacts .contacts__info span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #E1D4C9;
+}
+
+#contacts .contacts__info a {
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+}
+
 @media (max-width: 1200px) {
     #about .about__images {
         height: auto;
@@ -296,11 +350,17 @@ h2 span {
     .mobile-app__container {
         flex-direction: column;
     }
+
+    #contacts .contacts__container {
+        flex-direction: column;
+        padding: 100px 60px;
+        align-items: start;
+    }
 }
 
 @media (max-width: 1000px) {
     .hero-content {
-        margin: 100px 0 100px 100px;
+        margin: 100px 0 100px 60px;
     }
 }
 
@@ -339,11 +399,11 @@ h2 span {
     }
 
     .hero-content {
-        margin: 60px 32px;
+        margin: 60px 16px;
     }
 
     .slider-container {
-        padding: 40px 40px 0 40px;
+        padding: 0 40px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -383,6 +443,14 @@ h2 span {
 
     .app-store__button {
         flex-direction: column;
+    }
+
+    #contacts .contacts__container {
+        gap: 40px;
+    }
+
+    #contacts .contacts__container {
+        padding: 60px 16px;
     }
 }
 
