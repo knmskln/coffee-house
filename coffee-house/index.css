@@ -26,6 +26,35 @@ main {
     gap: 100px;
 }
 
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 105%;
+    color: #E1D4C9;
+    margin: 0;
+}
+
+h1 span {
+    font-style: italic;
+    color: #B0907A;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 125%;
+    color: #403F3D;
+    margin: 0;
+    text-align: center;
+}
+
+h2 span {
+    font-style: italic;
+    color: #B0907A;
+}
+
 #hero {
     position: relative;
     overflow: hidden;
@@ -69,20 +98,6 @@ main {
     margin: 100px 0 100px 140px;
 }
 
-.hero-content h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 72px;
-    line-height: 105%;
-    color: #E1D4C9;
-    margin: 0;
-}
-
-.hero-content h1 span {
-    font-style: italic;
-    color: #B0907A;
-}
-
 .hero-content p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -121,20 +136,6 @@ main {
     gap: 40px;
 }
 
-#favorite h2 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 125%;
-    color: #403F3D;
-    margin: 0;
-    text-align: center;
-}
-
-#favorite h2 span {
-    font-style: italic;
-    color: #B0907A;
-}
 
 .slider-container {
     padding: 0 40px;
@@ -203,6 +204,15 @@ main {
 }
 
 @media (max-width: 760px) {
+    h1 {
+        font-size: 42px;
+        line-height: 114.99999999999999%;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
     #hero {
         height: 552px;
     }
@@ -220,11 +230,6 @@ main {
         margin: 60px 32px;
     }
 
-    .hero-content h1 {
-        font-size: 42px;
-        line-height: 114.99999999999999%;
-    }
-
     .slider-container {
         padding: 40px 40px 0 40px;
         display: flex;
@@ -234,10 +239,6 @@ main {
 
     .slider-container svg {
         display: none;
-    }
-
-    #favorite h2 {
-        font-size: 32px;
     }
 
     .slider__item {
