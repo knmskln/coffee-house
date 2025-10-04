@@ -18,7 +18,7 @@ html {
 }
 
 header {
-    padding: 20px 0;
+    padding: 20px 0 16px 0;
 }
 
 main {
@@ -61,6 +61,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
+
 header ul {
     display: flex;
     list-style-type: none;
@@ -68,12 +69,28 @@ header ul {
     align-items: center;
     padding: 0;
 }
-header a {
+
+header ul li a, header a:last-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     text-decoration: none;
     color: #403F3D;
     font-family: Inter, sans-serif;
     font-weight: 600;
-    transition: color 0.5s ease;
+    padding-bottom: 4px;
+}
+
+header ul li a::after, header a:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #403F3D;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+    transform: scaleX(0);
 }
 
 #hero {
@@ -128,7 +145,7 @@ header a {
     margin: 0;
 }
 
-.hero-content button {
+.hero-content a {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -143,6 +160,7 @@ header a {
     justify-content: center;
     gap: 8px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .coffee-cup__icon {
@@ -492,7 +510,11 @@ header a {
 }
 
 @media (hover: hover) {
-    .hero-content button:hover {
+    header ul li a:hover::after, header a:last-child:hover::after {
+        transform: scale(1);
+    }
+
+    .hero-content a:hover {
         .coffee-cup__icon {
             max-width: 20px;
             opacity: 1;
