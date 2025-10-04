@@ -157,7 +157,6 @@ header a {
     gap: 40px;
 }
 
-
 .slider-container {
     display: flex;
     justify-content: space-between;
@@ -238,22 +237,22 @@ header a {
 }
 
 #about .about-image-1 {
-    background-image: url(assets/images/about-1.jpg);
+    background-image: url(../../assets/images/about-1.jpg);
     background-position: center;
 }
 
 #about .about-image-2 {
-    background-image: url(assets/images/about-2.jpg);
+    background-image: url(../../assets/images/about-2.jpg);
     background-position: center;
 }
 
 #about .about-image-3 {
-    background-image: url(assets/images/about-3.jpg);
+    background-image: url(../../assets/images/about-3.jpg);
     background-position: center;
 }
 
 #about .about-image-4 {
-    background-image: url(assets/images/about-4.jpg);
+    background-image: url(../../assets/images/about-4.jpg);
     background-position: center;
 }
 
