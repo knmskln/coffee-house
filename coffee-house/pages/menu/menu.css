@@ -29,6 +29,8 @@ h1 {
     border-radius: 100px;
     border: 1px solid #C1B6AD;
     background: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
 }
 
 #menu .tabs__button div {
@@ -47,7 +49,19 @@ h1 {
     font-size: 16px;
     line-height: 150%;
     color: #403F3D;
-    padding-right: 16px;
+    padding-right: 12px;
+}
+
+#menu .active-tab {
+    background-color: #665F55;
+}
+
+#menu .active-tab span {
+    color: #E1D4C9;
+}
+
+#menu .active-tab div {
+    background-color: #E1D4C9;
 }
 
 @media (max-width: 1200px) {
@@ -57,18 +71,15 @@ h1 {
 }
 
 @media (hover: hover) {
-    .hero-content a:hover {
-        .coffee-cup__icon {
-            max-width: 20px;
-            opacity: 1;
-        }
-    }
-
-    #favorite .slider-container button:hover svg path {
-        stroke: #E1D4C9;
-    }
-
-    #favorite .slider-container button:hover {
+    #menu .tabs__button:hover {
         background-color: #665F55;
+    }
+
+    #menu .tabs__button:hover span {
+        color: #E1D4C9;
+    }
+
+    #menu .tabs__button:hover div {
+        background-color: #E1D4C9;
     }
 }
