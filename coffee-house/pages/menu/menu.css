@@ -6,6 +6,50 @@ h1 {
     margin: 0 280px;
 }
 
+#menu .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+#menu .menu-tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#menu .tabs__button {
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    background: none;
+}
+
+#menu .tabs__button div {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #C1B6AD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu .tabs__button span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+    padding-right: 16px;
+}
+
 @media (max-width: 1200px) {
     #menu h2 {
         margin: 0;
