@@ -12,7 +12,7 @@ h1 span {
     color: #B0907A;
 }
 
-header a:last-child::after {
+header .menu::after {
     transform: scaleX(0);
 }
 
@@ -394,7 +394,7 @@ header a:last-child::after {
 }
 
 @media (hover: hover) {
-    header a:last-child:hover::after {
+    header .menu:hover::after {
         transform: scale(1);
     }
 

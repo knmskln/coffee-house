@@ -60,7 +60,7 @@ header ul {
     padding: 0;
 }
 
-header ul li a, header a:last-child {
+header ul li a, header .menu {
     position: relative;
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@ header ul li a, header a:last-child {
     padding-bottom: 4px;
 }
 
-header ul li a::after, header a:last-child::after {
+header ul li a::after, header .menu::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -84,6 +84,35 @@ header ul li a::after, header a:last-child::after {
 
 header ul li a::after {
     transform: scaleX(0);
+}
+
+.burger-wrapper {
+    display: none;
+    width: 44px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8px;
+    border: 1px solid #665F55;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+.burger {
+    width: 16px;
+    height: 1.5px;
+    background-color: #403F3D;
+}
+
+@media (max-width: 768px) {
+    .burger-wrapper {
+        display: flex;
+    }
+
+    header ul, header .menu {
+        display: none;
+    }
 }
 
 @media (max-width: 760px) {
