@@ -331,6 +331,45 @@ header ul li a::after, header a:last-child::after {
     gap: 20px;
 }
 
+.app-store__button a {
+    text-decoration: none;
+    background-color: #E1D4C9;
+    color: #403F3D;
+    border-radius: 100px;
+    border: 1px solid #665F55;
+    width: 200px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.app-store__button a svg {
+    padding-left: 20px;
+}
+
+.app-store__button a div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.app-store__button a div span:first-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+}
+
+.app-store__button a div span:last-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+}
+
 #contacts .contacts__container {
     background-color: #665F55;
     display: flex;
@@ -350,6 +389,19 @@ header ul li a::after, header a:last-child::after {
 #contacts .contacts__buttons {
     display: flex;
     gap: 12px;
+}
+
+#contacts .contacts__buttons a {
+    text-decoration: none;
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 #contacts h2 {
@@ -383,8 +435,29 @@ header ul li a::after, header a:last-child::after {
 
 #contacts .contacts__info a {
     text-decoration: none;
+}
+
+#contacts .contacts__info div {
     display: flex;
     gap: 8px;
+}
+
+#contacts .contacts-wrapper {
+    display: inline-flex;
+    gap: 8px;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+#contacts .contacts-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #E1D4C9;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+    transform: scaleX(0);
 }
 
 @media (max-width: 1200px) {
@@ -527,5 +600,29 @@ header ul li a::after, header a:last-child::after {
 
     #favorite .slider-container button:hover {
         background-color: #665F55;
+    }
+
+    #mobile-app .app-store__button a:hover {
+        background-color: #665F55;
+    }
+
+    #mobile-app .app-store__button a:hover span {
+        color: #E1D4C9;
+    }
+
+    #mobile-app .app-store__button a:hover svg path {
+        fill: #E1D4C9;
+    }
+
+    #contacts .contacts__buttons a:hover {
+        background-color: #E1D4C9;
+    }
+
+    #contacts .contacts__buttons a:hover svg path {
+        stroke: #403F3D;
+    }
+
+    #contacts .contacts-wrapper:hover::after {
+        transform: scale(1);
     }
 }
