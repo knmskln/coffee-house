@@ -62,6 +62,9 @@ header .container {
     align-items: center;
 }
 
+header .container > a img{
+    transition: transform 0.5s ease-in-out;
+}
 header ul {
     display: flex;
     list-style-type: none;
@@ -343,6 +346,7 @@ header ul li a::after, header a:last-child::after {
     gap: 8px;
     cursor: pointer;
     box-sizing: border-box;
+    transition: background-color 0.5s ease;
 }
 
 .app-store__button a svg {
@@ -401,6 +405,7 @@ header ul li a::after, header a:last-child::after {
     justify-content: center;
     cursor: pointer;
     box-sizing: border-box;
+    transition: background-color 0.5s ease;
 }
 
 #contacts h2 {
@@ -584,6 +589,10 @@ header ul li a::after, header a:last-child::after {
 @media (hover: hover) {
     header ul li a:hover::after, header a:last-child:hover::after {
         transform: scale(1);
+    }
+
+    header .container > a:hover img {
+        transform: scale(1.05);
     }
 
     .hero-content a:hover {
