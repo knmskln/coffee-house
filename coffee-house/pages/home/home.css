@@ -204,18 +204,20 @@ header .menu::after {
     gap: 40px;
 }
 
-#about .about__big-image {
+#about .about__big-image, #about .about__small-image {
     max-width: 660px;
-    height: 590px;
     object-fit: cover;
     border-radius: 20px;
+    background-size: 110%;
+    transition: background-size 0.4s ease, opacity 0.2s ease;
+}
+
+#about .about__big-image {
+    height: 590px;
 }
 
 #about .about__small-image {
-    max-width: 660px;
     height: 430px;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 #mobile-app h2 {
@@ -411,6 +413,10 @@ header .menu::after {
 
     #favorite .slider-container button:hover {
         background-color: #665F55;
+    }
+
+    #about .about__images div:hover {
+        background-size: 100%;
     }
 
     #mobile-app .app-store__button a:hover {
