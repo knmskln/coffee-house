@@ -64,6 +64,59 @@ h1 {
     background-color: #E1D4C9;
 }
 
+#menu .menu-item {
+    box-sizing: border-box;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C1B6AD;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#menu .menu-item .menu-item__img-container {
+    overflow: hidden;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+#menu .menu-item img {
+    display: block;
+    height: 310px;
+    transform: scale(1.1);
+    width: auto;
+    transition: transform 0.4s ease-in-out;
+}
+
+#menu .menu-item img:hover {
+    transform: scale(1);
+}
+
+#menu .menu-item .menu-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+
+#menu .menu-item .menu-item__content h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #403F3D;
+    margin: 0;
+}
+
+#menu .menu-item .menu-item__content p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+    margin: 0;
+}
+
 @media (max-width: 1200px) {
     #menu h2 {
         margin: 0;
