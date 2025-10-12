@@ -161,7 +161,7 @@ dialog p {
     margin: 0;
 }
 
-dialog .dialog__img-container img{
+dialog .dialog__img-container img {
     border-radius: 40px;
     width: 310px;
     height: 310px;
@@ -190,6 +190,7 @@ dialog .dialog__item-size, dialog .dialog__item-additives {
 dialog .dialog__item-size-tabs, dialog .dialog__item-additives-tabs {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -299,6 +300,19 @@ dialog::backdrop {
 @media (max-width: 1200px) {
     #menu h2 {
         margin: 0;
+    }
+    dialog .dialog__text-container {
+        width: 346px;
+    }
+}
+
+@media (max-width: 760px) {
+    dialog .dialog__img-container img {
+        display: none;
+    }
+    dialog .dialog__text-container {
+        width: 310px;
+        padding: 0;
     }
 }
 
