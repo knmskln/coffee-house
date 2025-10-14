@@ -209,7 +209,7 @@ dialog .dialog__item-size-tab, dialog .dialog__item-additives-tab {
     outline: none;
 }
 
-dialog .dialog__item-size-tab div, dialog .dialog__item-additives-tab div {
+dialog .dialog__item-size-tab .tab-circle, dialog .dialog__item-additives-tab .tab-circle {
     width: 30px;
     height: 30px;
     border-radius: 100px;
@@ -217,12 +217,6 @@ dialog .dialog__item-size-tab div, dialog .dialog__item-additives-tab div {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-dialog .dialog__item-size-tab div span, dialog .dialog__item-additives-tab div span {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 dialog .dialog__item-size-tab span, dialog .dialog__item-additives-tab span {
@@ -233,7 +227,7 @@ dialog .dialog__item-size-tab span, dialog .dialog__item-additives-tab span {
     color: #403F3D;
 }
 
-dialog .dialog__item-size-tab > span, dialog .dialog__item-additives-tab > span {
+dialog .dialog__item-size-tab span:last-child, dialog .dialog__item-additives-tab span:last-child {
     padding-right: 12px;
 }
 
@@ -245,11 +239,11 @@ dialog .active-tab span {
     color: #E1D4C9;
 }
 
-dialog .active-tab div span {
+dialog .active-tab .tab-circle {
     color: #403F3D;
 }
 
-dialog .active-tab div {
+dialog .active-tab .tab-circle {
     background-color: #E1D4C9;
 }
 
