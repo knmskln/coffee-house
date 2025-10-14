@@ -1,0 +1,328 @@
+h1 {
+    display: none;
+}
+
+#menu h2 {
+    margin: 0 280px;
+}
+
+#menu .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+#menu .menu-tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#menu .tabs__button {
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#menu .tabs__button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #C1B6AD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: none;
+}
+
+#menu .tabs__button span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+    padding-right: 12px;
+}
+
+#menu .active-tab {
+    background-color: #665F55;
+}
+
+#menu .active-tab span {
+    color: #E1D4C9;
+}
+
+#menu .active-tab img {
+    background-color: #E1D4C9;
+}
+
+#menu .menu-item {
+    box-sizing: border-box;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C1B6AD;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#menu .menu-item .menu-item__img-container {
+    overflow: hidden;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+#menu .menu-item img {
+    display: block;
+    height: 310px;
+    transform: scale(1.1);
+    width: auto;
+    transition: transform 0.4s ease-in-out;
+}
+
+#menu .menu-item img:hover {
+    transform: scale(1);
+}
+
+#menu .menu-item:hover {
+    cursor: pointer;
+}
+
+#menu .menu-item .menu-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+
+#menu .menu-item .menu-item__content h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #403F3D;
+    margin: 0;
+}
+
+#menu .menu-item .menu-item__content p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+    margin: 0;
+}
+
+body.wrapper-active {
+    overflow: hidden;
+}
+
+dialog {
+    opacity: 0;
+    padding: 16px;
+    border: none;
+    transition: opacity 0.8s ease;
+    background-color: #E1D4C9;
+    border-radius: 40px;
+}
+
+dialog.active {
+    opacity: 1;
+}
+
+dialog .dialog__container {
+    display: flex;
+    flex-direction: row;
+}
+
+dialog h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: #403F3D;
+    margin: 0;
+}
+
+dialog p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+    margin: 0;
+}
+
+dialog .dialog__img-container img {
+    border-radius: 40px;
+    width: 310px;
+    height: 310px;
+}
+
+dialog .dialog__text-container {
+    width: 458px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+dialog .dialog__text-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+dialog .dialog__item-size, dialog .dialog__item-additives {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+dialog .dialog__item-size-tabs, dialog .dialog__item-additives-tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+dialog .dialog__item-size-tab, dialog .dialog__item-additives-tab {
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+    outline: none;
+}
+
+dialog .dialog__item-size-tab .tab-circle, dialog .dialog__item-additives-tab .tab-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #C1B6AD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog .dialog__item-size-tab span, dialog .dialog__item-additives-tab span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+}
+
+dialog .dialog__item-size-tab span:last-child, dialog .dialog__item-additives-tab span:last-child {
+    padding-right: 12px;
+}
+
+dialog .active-tab {
+    background-color: #665F55;
+}
+
+dialog .active-tab span {
+    color: #E1D4C9;
+}
+
+dialog .active-tab .tab-circle {
+    color: #403F3D;
+}
+
+dialog .active-tab .tab-circle {
+    background-color: #E1D4C9;
+}
+
+dialog .dialog__item-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+dialog .dialog__info {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    border-top: 1px solid #C1B6AD;
+    padding: 12px 0;
+}
+
+dialog .dialog__info img {
+    width: 16px;
+}
+
+dialog .dialog__info span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+    color: #403F3D;
+    letter-spacing: 0.2px;
+}
+
+dialog .close-button {
+    background-color: #E1D4C9;
+    border: 1px solid #665F55;
+    cursor: pointer;
+    border-radius: 100px;
+    height: 44px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #403F3D;
+}
+
+dialog::backdrop {
+    background-color: #22222299;
+    opacity: 0.6;
+}
+
+@media (max-width: 1200px) {
+    #menu h2 {
+        margin: 0;
+    }
+
+    dialog .dialog__text-container {
+        width: 346px;
+    }
+}
+
+@media (max-width: 760px) {
+    dialog .dialog__img-container img {
+        display: none;
+    }
+
+    dialog .dialog__text-container {
+        width: 310px;
+        padding: 0;
+    }
+}
+
+@media (hover: hover) {
+    #menu .tabs__button:hover {
+        background-color: #665F55;
+    }
+
+    #menu .tabs__button:hover span {
+        color: #E1D4C9;
+    }
+
+    #menu .tabs__button:hover img {
+        background-color: #E1D4C9;
+    }
+}

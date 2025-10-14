@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link rel="icon" href="../../assets/icons/coffee-cup-light.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../contacts.css">
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+    <script src="../burger.js" defer></script>
+    <script src="../dialog.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="../home/home.html"><img src="../../assets/icons/logo.svg" alt="logo"></a>
+        <ul>
+            <li><a href="../home/home.html#favorite">Favorite coffee</a></li>
+            <li><a href="../home/home.html#about">About</a></li>
+            <li><a href="../home/home.html#mobile-app">Mobile app</a></li>
+            <li><a href="../home/home.html#contacts">Contact us</a></li>
+        </ul>
+        <a class="menu"><span>Menu</span><span><img src="../../assets/icons/coffee-cup.svg" alt="coffee cup"></span></a>
+        <div class="burger-wrapper" id="burger">
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </div>
+        <div class="burger-menu-wrapper" id="burger-menu-wrapper">
+            <div id="burger-menu">
+                <ul>
+                    <li><a href="../home/home.html#favorite">Favorite coffee</a></li>
+                    <li><a href="../home/home.html#about">About</a></li>
+                    <li><a href="../home/home.html#mobile-app">Mobile app</a></li>
+                    <li><a href="../home/home.html#contacts">Contact us</a></li>
+                </ul>
+                <a><span>Menu</span><span><img src="../../assets/icons/coffee-cup-2.svg" alt="coffee cup"></span></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="menu">
+        <div class="container">
+            <h1>Menu</h1>
+            <h2>
+                Behind each of our cups hides an <span>amazing surprise</span>
+            </h2>
+            <div class="menu-tabs">
+                <button class="tabs__button active-tab">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK6SURBVHgBzZNfT9NQGMafru3abnQdW+fQCUMGI8jiELmQBEhI1IQ7I3pj9BsY77w18QOY+Al06oUJJGqiiTe7MUJixIAJGBwRtqEbTNlfunbtttYDUW5kGu98kpM27cnvPO/zvgdooampKY4s38zMDG1ZFoU/iGnxnQqFQqOy38+oqpqMxWJ5AipTFGX9C8QyDGMlGokEeZ4fJusNAZTQ6sRWP9LpdI+iKAG3KHrqprkWDAY3CEj/K8SyKnLi4/qtXC57uVIq9lTKJfAOJ+r1Bjxe2RIcjrm+voFYR6Dr/qHl7IWXWP2w8Or5k+7VpQWkUxuolFVwvIBGw4Ase6je/v7x4bFz48X89852r+/ObxAisaZUgrOPHyK3U4UkiXC1SaAZBnWLxloyh+XVJGy0HWfOjl16+eJpINwf3g6HI7cPyllcfHuy63jnwlZ2y/Fufg7JzwnsloowzQacogTJK6PjWADR4dNYWV7JMLxtiDLtFyYmJz/R+4D38zcLO7lZgXcIDicPO8dAcDrhPuKHJPvACgJgs8HlagPHscSl5JI98pV0KvnFfzSQsG1vb0YMvXaPoVle1aqgfnozDJ1kUkahUMSuUkWz2QRFQHuykWcmkz3h8XgvDg4OLTGapoZsFChB4EkXDJKwCc7Oguc5MCwNmqb3QoedZcASRiGfh6rVSJkWgt3d0n6wbnCvFYejWDeMdstsIpVcB8/xENucKBPrOomeoxl4JCe+ZjKoKBqcbSJxbAPL2p8dzMnm5sZELpN6pOtasKpUkCWbNVUjpkxoNQ0qedcNg3SG5OF2Q3SRoEX3g96B6I2RkRH1oDuK8q1jPZG8XirmrilK5VS1WoVeI7ZJeSzD7s8LLwg5AlpyS+67o+Pn44dO7C/F43EvSzWjNV3zGUadq9UNcvmwPD19NdnqEv4f+gHCrCCF8sXRwgAAAABJRU5ErkJggg=="
+                         alt="coffee">
+                    <span>Coffee</span>
+                </button>
+                <button class="tabs__button">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKbSURBVHgB1VJLaBNRFL2Zya+fpJmGQi2oQaiIiBQVhbqwqBXjUiy4KthFN250JzSLWbTgxoW7gsXaRXWhlnaRulAEbVNTS+1gtJ+0MUzR6S9pZiaZzO/NPN8MVIqu3OnhXR73cc+55773AP4LpBdzrRsl5fnQaPIw/C16e3t930X1El8QX6zvlHBWKIxm+GLn/pqRsbHoryQejwe47Pqtrq4u2smTqYW2GW55eoXfwHlhC/MbW3h1/QfmVnk8OTU/9+zVh9iaUBhYyHzVPq/lBx0O1d5+sYX2WI8HHg6yzkHAHzrXEImerw+HgWEi0MQwZG+E+voQRBuZMyeOxV6uZZfjoyPD0VJx93RqIdvmunk7lX7N74jSm/SX40uCnBdkhCUDY7JcVC2MNysI57bK+NOqgCfefbzu8KbmuKG5zFIH5SSyLI8Hfd7w0dZYxgt2zEIG6CYCw8Kg2xhUHYFpaGDbiIQN/mDopMOzLEwjpIHXSQwDUpvbRbAxRURtQKYfLCMAhkqDBzAYpgkaKdJUAyqVKlQk2blkNhyuO8Kl06orMjnxdLmmtlusDTVE/F4akE4E/D6gaAow6WxZFpjEmabrIEsVIiI1fxMKfbnsot3T0z3rvgjHcehq5+WgqqodJumIkElIOulcJaFCtaqAoihkbAlKu7vOaIytq025lcWbyWRSpPeeuq3lwLwvHLpmmmYzMol1TXMFVCKkKGUol2XiQiIhgiIVh2dnpm+wLLvtcD37P9CD/v6DvgjzPhCoiQWDfnccBzYZRycOq0RUV9X8Uip16sn4uLjH8/z+W++z7CHw0o+8/sAVD027BTa2XCHLNJIW0LcTiQS/n/OHyB7Yvrtna2ojF4Ci6sj1FnweirtzLzEN/zR+Akw/cxTXmhWEAAAAAElFTkSuQmCC"
+                         alt="tea">
+                    <span>Tea</span>
+                </button>
+                <button class="tabs__button">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKWSURBVHgBzVJLaxNRFP7uPJKYpq8sGkkKXaitYCiFigupKApKKS5cdOHSnfhYuvRXiIgIrqQ+lgFLsaKb+qj4qn2grYISsY9pmpJkJjNzX56ZqhTEhRvxwuEw93z3+75zzgD/y2F/KjRvXDsy+er+hcm8qp4cHL16fOTM278ief3gdr5w887TldW1ntJwHr29B9BXGJizLPsKCl1jxa5iYzve2P4x9/he5snkrYt8feOF+7Hcs8OpYt/YPDpkAjJoFnnoXkf568Kn91Nnf3NSKpXS2bR7mjF5SUv0KcdBbeIRQpOhfe8e5I4OIbUjCcs0YDIGZjCkEqnptGyOpnefKLPV2Yc5lwUTVBkwqQitYZE/0zBgsEhDk5KmzAHhQ4lgS9rORpXxnX3DI1ZbW7IlY1oDnDehpE/YDeigQnmTHrlgsgamGmDCg+QCBlmF4BCdB6E7hw5rPZ60NpyFFSt8wy1w2xA1mEkbWkaKmkxFLhQFSUeumAXDsOLM/G9QWrV8+aDy8UzWnp8rm8rvNrQHkzBaGWQ1Ac0yYHYrRQe0maE1ZOKsWBoSFoQU8IJmzopIEtlBxzRT3YwUYLfHIMbsuHUyQ4pbrkiZWpZbQW3Rlb+r/5QTk7R09teU0pB0K2UE1DGIruLHiLOiNps0jzq078R3oV1YYoxp68emG6SFmIg2IMM6LaJC4FWosEroTXBvHYzTzGhLigeQ2UOQnTkneh2TVMpTNUHs0l0mpQo54aQqKGiw0TaUBA8lbYaGzASE11RmtrUstLz7i2RzebYKWScFH1o0KCQ5IhKuAlJekUovikC9pFEuWYnEZ7+emN1/7PL6zz82JnHd2gxCb1qF3gz3vHdahjVpJuezLLVYPP+sgX9xvgND73DOKIw1LAAAAABJRU5ErkJggg=="
+                         alt="dessert">
+                    <span>Dessert</span>
+                </button>
+            </div>
+            <div class="menu-items-container">
+                <div class="menu-item">
+                    <div class="menu-item__img-container">
+                        <img src="../../assets/images/coffee-1.jpg" alt="coffee">
+                    </div>
+                    <div class="menu-item__content">
+                        <h3>Irish coffee</h3>
+                        <p>Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                        <h3>$7.00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="container">
+            <div class="contacts__container">
+                <div class="contacts__container-info">
+                    <h2>Sip, Savor, Smile. <span>It’s coffee time!</span></h2>
+                    <div class="contacts__buttons">
+                        <a href="https://x.com">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"
+                                      stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                      stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                                      stroke="#E1D4C9"/>
+                                <path d="M17.5 6.51L17.51 6.49889" stroke="#E1D4C9" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                                      stroke="#E1D4C9" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__info">
+                    <h3>Contact us</h3>
+                    <a href="https://maps.app.goo.gl/UAyf63PTBjqVrps39" target="_blank">
+                        <span class="contacts-wrapper">
+                            <img src="../../assets/icons/location.svg" alt="location">
+                        <span>8558 Green Rd., LA</span></span>
+                    </a>
+                    <a href="tel:+1(603)555-0123">
+                        <span class="contacts-wrapper">
+                            <img src="../../assets/icons/phone.svg" alt="phone">
+                        <span>+1 (603) 555-0123</span></span>
+                    </a>
+                    <div>
+                        <img src="../../assets/icons/clock.svg" alt="clock">
+                        <span>Mon-Sat: 9:00 AM – 23:00 PM</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <dialog>
+        <div class="dialog__container">
+            <div class="dialog__img-container">
+                <img src="../../assets/images/coffee-1.jpg" alt="coffee">
+            </div>
+            <div class="dialog__text-container">
+                <div class="dialog__text-header">
+                    <h3>Irish coffee</h3>
+                    <p>Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                </div>
+                <div class="dialog__item-size">
+                    <p>Size</p>
+                    <div class="dialog__item-size-tabs">
+                        <button class="dialog__item-size-tab active-tab">
+                            <span class="tab-circle">S</span>
+                            <span>200 ml</span>
+                        </button>
+                        <button class="dialog__item-size-tab">
+                            <span class="tab-circle">M</span>
+                            <span>300 ml</span>
+                        </button>
+                        <button class="dialog__item-size-tab">
+                            <span class="tab-circle">L</span>
+                            <span>400 ml</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="dialog__item-additives">
+                    <p>Additives</p>
+                    <div class="dialog__item-additives-tabs">
+                        <button class="dialog__item-additives-tab">
+                            <span class="tab-circle">1</span>
+                            <span>Sugar</span>
+                        </button>
+                        <button class="dialog__item-additives-tab">
+                            <span class="tab-circle">2</span>
+                            <span>Cinnamon</span>
+                        </button>
+                        <button class="dialog__item-additives-tab">
+                            <span class="tab-circle">3</span>
+                            <span>Syrup</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="dialog__item-price">
+                    <h3>Total:</h3>
+                    <h3>$7.00</h3>
+                </div>
+                <div class="dialog__info">
+                    <img src="../../assets/icons/info.svg" alt="info">
+                    <span>The cost is not final. Download our mobile app to see the final price and place your order. Earn
+                        loyalty points and enjoy your favorite coffee with up to 20% discount.</span>
+                </div>
+                <button class="close-button">Close</button>
+            </div>
+        </div>
+    </dialog>
+</main>
+</body>
+</html>
